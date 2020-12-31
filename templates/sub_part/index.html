@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>INR Website</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -31,10 +31,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <i class="fa fa-user w3-xxlarge"></i>
     <p>ABOUT</p>
   </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p>PHOTOS</p>
-  </a>
+
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-envelope w3-xxlarge"></i>
     <p>CONTACT</p>
@@ -55,12 +52,31 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+      <div class="container">
+	<div class="row">
+	<svg viewBox="0 0 960 300">
+    <symbol id="s-text">
+      <text text-anchor="middle" x="50%" y="80%"> INR_Vignesh </text>
+	</symbol>
+
+	<g class = "g-ants">
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+	</g>
+</svg>
+	</div>
+
+    <div class="row">
+
+        </div>
+    </div>
 
 
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Ayyanar Vignesh</h1>
-    <p>Python application and web developer</p>
-    {% load static %}<img src="{% static 'images/img_yellow.jpg' %}" alt="inr 1" class="w3-image" width="992" height="1108">
-  <!--  <img src="/w3images/man_smoke.jpg" alt="boy" class="w3-image" width="992" height="1108">-->
+    <h1> Software Engineer</h1>
+
   </header>
 
   <!-- About Section -->
@@ -183,19 +199,15 @@ Lastly, I am a quick learner and believe in learning from my past mistakes. This
 
 
   </div>
-
-  <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">My Photos</h2>
-    <hr style="width:200px" class="w3-opacity">
-
-    <!-- Grid for photos -->
-<!-- The grid: four columns -->
+<!--youtube video-->
 
 
-    <!-- End photo grid -->
-  <!-- End Portfolio Section -->
-  </div>
+        <div class="w3-padding-64 w3-content w3-text-grey">
+             <h2 class="w3-text-light-grey">My Youtube Channel</h2>
+            <center>
+                 <iframe width="560" height="315" src="https://www.youtube.com/embed/k4TA17XdAaQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </center>
+        </div>
 
   <!-- Contact Section -->
   <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
@@ -207,23 +219,12 @@ Lastly, I am a quick learner and believe in learning from my past mistakes. This
       <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone:+91 8608497495</p>
       <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: ayyanar.2481996@gmail.com</p>
     </div><br>
-    <p>Let's get in touch. Send me a message:</p>
 
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
   <!-- End Contact Section -->
   </div>
 
     <!-- Footer -->
+    <center>
   <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
     <i><a href="https://www.facebook.com/ronaldoinr.inr" class="fa fa-facebook-official w3-hover-opacity"></a> </i>
      <i><a href="https://www.instagram.com/inr_vignesh/" class="fa fa-instagram w3-hover-opacity"></a> </i>
@@ -233,6 +234,7 @@ Lastly, I am a quick learner and believe in learning from my past mistakes. This
     <p class="w3-medium">Powered by @Inr | 2020</p>
   <!-- End footer -->
   </footer>
+    </center>
 
 <!-- END PAGE CONTENT -->
 </div>
